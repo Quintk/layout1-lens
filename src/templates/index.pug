@@ -1,0 +1,127 @@
+extends _layout/layout
+
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+block body
+	section.home
+		.home_slider.owl-carousel.owl-theme
+			.item
+				figure
+					img.img-fluid(src="img/home_banner_01.png", alt="")
+			.item
+				figure
+					img.img-fluid(src="img/home_banner_03.png", alt="")
+			.item
+				figure
+					img.img-fluid(src="img/home_banner_02.png", alt="")
+	section.home_pro1
+		.container
+			.row
+				.col-md-8
+					figure
+						img.img-fluid(src="img/banner_01.png", alt="")
+				.col-md-4.col-6
+					figure
+						img.img-fluid.pic(src="img/pro_img_01.png", alt="")
+						figcaption
+							h6 Ice Cream - Maple Brown
+							.price
+								P 360,000 VNĐ
+				.col-md-4.col-6
+					figure
+						img.img-fluid.pic(src="img/pro_img_02.png", alt="")
+						figcaption
+							h6 Moisture - Shinny Green
+							.price
+								P 360,000 VNĐ
+				.col-md-4.col-6
+					figure
+						img.img-fluid.pic(src="img/pro_img_03.png", alt="")
+						figcaption
+							h6 Moisture - Bubble Gray
+							.price
+								P 290,000 VNĐ
+				.col-md-4.col-6
+					figure
+						img.img-fluid.pic(src="img/pro_img_04.png", alt="")
+						figcaption
+							h6 Moisture - Shinny Green
+							.price
+								P 100,000 VNĐ
+	section.home_pro2.mt-5
+		.container
+			.row.mt-3
+				.col
+					h2.text-center TOP PIECES ON SALE
+			.top_seller.owl-carousel.owl-theme
+				.item.mr-3
+					figure
+						.box-img
+							img.img-fluid(src="img/pro-sale-1.png", alt="")
+							.bar
+								img(src="img/bar.png", alt="")
+						figcaption
+							h6 Ice cream - Sweety Brown
+							.price
+								p 650,000 VNĐ
+							button
+								a(href="#") Contact
+				.item.mr-3
+					figure
+						.box-img
+							img.img-fluid(src="img/pro-sale-2.png", alt="")
+							.bar
+								img(src="img/bar.png", alt="")
+						figcaption
+							h6 Moisture - Aria Gray
+							.price
+								p 750,000 VNĐ
+							button
+								a(href="#") Contact
+				.item.mr-3
+					figure
+						.box-img
+							img.img-fluid(src="img/pro-sale-3.png", alt="")
+							.bar
+								img(src="img/bar.png", alt="")
+						figcaption
+							h6 Moisture - Aria Gray
+							.price
+								p 320,000 VNĐ
+							button
+								a(href="#") Contact
+				.item.mr-3
+					figure
+						.box-img
+							img.img-fluid(src="img/pro-sale-4.png", alt="")
+							.bar
+								img.img-fluid(src="img/bar.png", alt="")
+						figcaption
+							h6 Saigon night - moonlight
+							.price
+								p 320,000 VNĐ
+							button
+								a(href="#") Contact
+			.row
+				img.img-fluid(src="img/banner_02.png", alt="")
+	section.home_pro3.mt-5
+		.container
+			.row
+				.col
+					h2.text-center BEST SELLERS
+			.row
+				.col-md-7
+					figure
+						img.img_fluid(src="img/img_05.png", alt="")
+				.col-md-5.pro_2
+					figure
+						img.img_fluid.pro(src="img/img_06.png", alt="")
+						figcaption.mt-3
+							h6 Ice cream - Sweety Gray
+							.price
+								p 750,000 VNĐ
+							button
+								a(href="#") VIEW MORE
